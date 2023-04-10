@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: musicbrainz_artist
+    description: 'A demo dbt model'
+    columns:
+      - name: id
+        description: 'The primary key for this table'
+        tests:
+          - unique
+          - not_null
+      - name: name
+        tests:
+          - not_null
+      - name: gender
+        tests:
+          - not_null
+      - name: type
+        tests:
+          - not_null
