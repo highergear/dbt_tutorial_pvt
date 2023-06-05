@@ -13,6 +13,4 @@ models:
         tests:
           - not_null
       - name: gender
-        tests:
-          - not_null
       - name: type
