@@ -1,0 +1,16 @@
+jaffle_shop:
+  target: prod
+  outputs:
+
+    prod:
+      type: bigquery
+      method: service-account
+      project: etl-playground-377701
+      dataset: dbt_river
+      keyfile: /secrets/dbt-service-keyfile
+      threads: 4
+      timeout-seconds: 300
+      priority: interactive
+      retries: 1
+      location: US
+
