@@ -4,5 +4,6 @@ select
     sort_name,
     area,
     gender,
-    type
+    type,
+    end_area
 from {{ source('musicbrainz', 'artist') }}
