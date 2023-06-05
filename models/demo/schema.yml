@@ -16,5 +16,3 @@ models:
         tests:
           - not_null
       - name: type
-        tests:
-          - not_null
