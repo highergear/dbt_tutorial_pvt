@@ -1,7 +1,6 @@
 jaffle_shop:
   target: prod
   outputs:
-
     prod:
       type: bigquery
       method: service-account
@@ -9,8 +8,6 @@ jaffle_shop:
       dataset: dbt_river
       keyfile: /secrets/dbt-service-keyfile
       threads: 4
-      timeout-seconds: 300
+      timeout_seconds: 300
       priority: interactive
       retries: 1
-      location: US
-
